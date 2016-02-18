@@ -1,0 +1,18 @@
+
+<% if @post.errors.any? %>
+	<div class="alert alert-danger" role="alert">
+		<p>
+			<%= pluralize(@post.errors.count, "error") %> just occurred:
+		</p>
+		<ul>
+			<% @post.errors.full_messages.each do |err| %>
+				<li><%= err %></li>
+			<% end %>
+		</ul>
+	</div>
+	
+	<%= render 'form' %>
+<% else %>
+	<%= render 'form' %>
+<% end %>
+

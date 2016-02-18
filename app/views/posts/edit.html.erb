@@ -1,0 +1,13 @@
+<% if !user_signed_in?%>
+	<%= render 'loginalert' %>
+<% elsif @post == nil %>
+	<%= render 'postnotfound' %>
+<% elsif current_user.id == @post.user.id %>
+	<%= render 'form' %>
+<% else %>
+	<div class="container alert alert-danger" role="alert">
+	<p>
+	Not allowed to edit user <%=@post.user.email%>'s posts
+	</p>
+	</div>
+<% end %>
