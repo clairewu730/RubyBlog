@@ -31,6 +31,7 @@ gem 'devise', '~> 3.5', '>= 3.5.3'
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem 'tinymce-rails', '~> 4.3', '>= 4.3.2'
 gem 'nicescroll-rails', '~> 3.5', '>= 3.5.4.1'
+gem 'sass', '~> 3.4', '>= 3.4.21'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

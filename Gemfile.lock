@@ -189,6 +189,7 @@ DEPENDENCIES
   paperclip (~> 4.3, >= 4.3.2)
   pg
   rails (= 4.2.5)
+  sass (~> 3.4, >= 3.4.21)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form (~> 3.2, >= 3.2.1)
